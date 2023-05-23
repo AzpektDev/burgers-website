@@ -30,6 +30,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 30px;
+  text-align: center;
 }
 
 .card-low-container {
@@ -49,6 +50,7 @@ body {
   max-width: 100%;
   object-fit: cover;
 }
+
 
 .card1 {
   border-radius: 30px 30px 10px 30px;
@@ -200,7 +202,47 @@ h1 {
 
   .card {
     width: calc(50% - 20px);
-    height: 40%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .down {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 36px;
+  }
+
+  .big-card {
+    margin: 75px 0px 10px 0px; 
+  }
+
+  .navbar {
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .navbar-left {
+    width: 67% !important;
+  }
+
+  .navbar-right {
+    width: 28%;
+  }
+
+  .badge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .big-card > .down {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 29px;
   }
 }
 
