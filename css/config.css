@@ -1,0 +1,37 @@
+:root {
+  /* just background */
+  --bg-main1: #ffffff;
+  /* small card bg */
+  --bg-main2: #F8F6F5;
+  /* button fills etc */
+  --bg-main3: #EEF0F2;
+
+  /* self explanatory */
+  --font-name: ;
+
+  /* card headers - black */
+  --font-main1: #242424;
+  /* card desc - gray/black */
+  --font-main2: #BFBFBF;
+  /* that green text on buttons and navbar */
+  --font-accent: #498664;
+
+  /* big burger header */
+  --font-size1: 45px;
+  /* small burgers header */
+  --font-size2: ;
+  /* big card desc */
+  --font-size3: ;
+  /* small card desc */
+  --font-size4: ;
+
+  --border-radius: 30px;
+  --border-radius-badge: 8px;
+
+  /* very red button */
+  --btn-main: #F06D4E;
+  /* light red button */
+  --btn-secondary: #F8F6F5;
+  /* self explanatory */
+  --btn-hover: #f15633;
+}

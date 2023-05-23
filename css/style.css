@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 60px 25px 30px 25px;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eef0f2;
+  width: calc(50% - 25px);
+  height: 50%;
+  justify-content: center;
+}
+
+.card > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.card-low-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.desc-small {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.card > img {
+  max-height: 60%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card1 {
+  border-radius: 30px 30px 10px 30px;
+
+  margin-bottom: -100px !important;
+}
+
+.card2 {
+  border-radius: 30px 30px 30px 10px;
+}
+
+.card3 {
+  border-radius: 30px 10px 30px 30px;
+}
+
+.card4 {
+  border-radius: 10px 30px 30px 30px;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  margin: 60px 10px 25px 50px;
+  background-color: white;
+  border: 1px solid #cacaca;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.image-large {
+  align-items: center;
+  object-fit: cover;
+  max-height: 60%;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.badge {
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  padding: 7.5px;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  background-color: #cacaca;
+  border-radius: 10px;
+  width: 93px;
+  height: 36px;
+}
+
+.counter > .counter-remove {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0px 10px 0px 10px;
+  color: 45px;
+}
+
+.counter > .counter-text {
+  font-size: 15px;
+  line-height: 4px;
+}
+
+.counter > .counter-add {
+  background: none;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0px 10px 0px 10px;
+  color: #498664;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 29px;
+}
+
+.down-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.buy {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #6cc6946d;
+  color: #60b386;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.buy:hover {
+  background-color: #6cc69496;
+  color: #60b386;
+  transition: 0.3s;
+}
+
+.price {
+  font-size: 20px;
+  margin: 10px;
+}
+
+@media (max-width: 1144px) {
+  body {
+    flex-direction: column;
+  }
+
+  .card-container {
+    height: auto;
+  }
+
+  .big-card,
+  .card {
+    flex-grow: unset;
+    margin: 10px 0;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+    height: 40%;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 50px 10px 50px;
+  position: fixed;
+  z-index: 1;
+
+  justify-content: space-between;
+  width: 92.5%;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  width: 27%;
+  justify-content: space-between;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 13%;
+  justify-content: space-between;
+}
+
+.navbar-left > p {
+  margin: 0px 20px 0px 20px;
+  font-size: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.login {
+  background-color: #f06d4e;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.login:hover {
+  background-color: #af503b;
+  transition: 0.3s;
+}
+
+.signup {
+  background-color: #fef0ee;
+  color: #f06d4e;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.signup:hover {
+  background-color: #fde3e0;
+  transition: 0.3s;
+}
+
+.button-active {
+  color: #77a88c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #77a88c;
+  transition: 0.3s;
+}
+
+.char {
+  display: inline-block;
+  position: relative;
+}
+
+.char::before {
+  content: "•";
+  display: inline-block;
+  position: absolute;
+  bottom: 1.2em;
+  left: 0;
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+}
